@@ -23,6 +23,9 @@ DerivedData
 
 project.xcworkspace
 
+#credentials
+config.js
+
 # Android/IntelliJ
 #
 build/

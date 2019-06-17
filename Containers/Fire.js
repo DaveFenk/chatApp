@@ -1,4 +1,5 @@
 import firebase from "firebase";
+import config from "../config"
 
 class Fire {
     constructor(){
@@ -7,7 +8,13 @@ class Fire {
 
     init = () =>
         firebase.initializeApp({
-
+            apiKey: config.API_KEY,
+            authDomain: config.AUTH_DOMAIN,
+            databaseURL: config.DB_URL,
+            projectId: config.PROJECT_ID,
+            storageBucket: config.STORAGE_BUCKET,
+            messagingSenderId: config.SENDER_ID,
+            appId: config.APP_ID
     })
 
     get ref(){
